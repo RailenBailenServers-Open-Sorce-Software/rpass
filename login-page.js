@@ -5,11 +5,9 @@ const loginErrorMsg = document.getElementById("login-error-msg");
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
-    const password = loginForm.password.value;
 
-    if (username === "Demo" && password === "Demo") {
-        alert("You have successfully logged in.");
-        location.replace("/Admin/index.html")
+    if (username === "/admin") {
+        location.replace("/Admin/admin-panel/index.html")
     } else {
         loginErrorMsg.style.opacity = 1;
     }
